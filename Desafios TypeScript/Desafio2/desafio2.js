@@ -1,36 +1,26 @@
 // Como podemos melhorar o esse código usando TS? 
-
-enum Trabalho {
-    Atriz = 'Atriz',
-    Padeiro ='Padeiro'
-}
-
-type Humano = {
-    nome: string,
-    idade: number,
-    profissao: Trabalho
-}
-
-const pessoa1: Humano = {
+var Trabalho;
+(function (Trabalho) {
+    Trabalho["Atriz"] = "Atriz";
+    Trabalho["Padeiro"] = "Padeiro";
+})(Trabalho || (Trabalho = {}));
+var pessoa1 = {
     nome: 'maria',
     idade: 29,
     profissao: Trabalho.Atriz
 };
-
-const pessoa2: Humano = {
+var pessoa2 = {
     nome: 'roberto',
     idade: 19,
     profissao: Trabalho.Padeiro
-}
-
-let pessoa3: Humano = {
+};
+var pessoa3 = {
     nome: 'laura',
     idade: 32,
     profissao: Trabalho.Atriz
 };
-
-let pessoa4: Humano = {
+var pessoa4 = {
     nome: "carlos",
     idade: 19,
     profissao: Trabalho.Padeiro
-}
+};
