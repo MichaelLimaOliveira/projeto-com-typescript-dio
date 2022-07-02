@@ -25,8 +25,7 @@ function limparCampoSoma() {
 
 function limparSaldo() {    
     saldoTotal = 0;
-    campoSaldo.innerHTML = saldoTotal.toString();
-    
+    campoSaldo.innerHTML = saldoTotal.toString();   
 }
 
 botaoLimpar.addEventListener('click', () => {
